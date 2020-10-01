@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header__logo {
+    height: 25px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.header__leftIcon {
+    cursor: pointer;
+}
+
+.header__middle {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.header__middle > input {
+    flex: 1;
+    height: 21px;
+    padding: 0 !important;
+}
+
+.header__middleButton{
+    width: 50px !important;
+    background-color: #fafafa;
+    border: 1px solid lightgray;
+    color: gray;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    margin: 5px;
+}
