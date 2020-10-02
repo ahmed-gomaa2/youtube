@@ -1,13 +1,14 @@
 .header {
     display: flex;
     flex: 1;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 1000;
     background-color: white;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .header__logo {
@@ -46,4 +47,19 @@
 
 .header__icon {
     margin: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .header__middle > input {
+        display: none;
+    }
+
+    .searching {
+        display: block !important;
+        width: 150px !important;
+    }
+
+    .header__right:first-child , .header__right:nth-child(2)  {
+        display: none;
+    }
 }

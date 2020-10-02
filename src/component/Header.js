@@ -13,6 +13,8 @@ import * as actions from '../actions'
 
 const Header = (props) => {
 
+    const [search, setSearch ] = React.useState(false)
+
     const [term, setTerm] = React.useState('')
 
     const handleInputChange = (e) => {
@@ -32,8 +34,8 @@ const Header = (props) => {
                 <img className={'header__logo'} src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg" alt=""/>
             </div>
             <form onSubmit={handleFormSubmit} className="header__middle">
-                <input value={term} onChange={handleInputChange} placeholder={'Search'} type="text"/>
-                <SearchIcon className={'header__middleButton'} />
+                <input className={`${search && 'searching'}`} value={term} onChange={handleInputChange} placeholder={'Search'} type="text"/>
+                <SearchIcon onClick={() => setSearch(!search)} className={'header__middleButton'} />
             </form>
             <div className="header__right">
                 <VideoCallIcon className={'header__icon'} />

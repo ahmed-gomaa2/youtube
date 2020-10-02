@@ -5,7 +5,7 @@ export const fetchVideos = term => async dispatch => {
     const response = await axios.get('https://www.googleapis.com/youtube/v3/search/',{
         params : {
             part: 'snippet',
-            maxResults: 20,
+            maxResults: 10,
             key: youtubeApiKey,
             q:term
         }
@@ -16,3 +16,4 @@ export const fetchVideos = term => async dispatch => {
         payload: response
     })
 }
+
