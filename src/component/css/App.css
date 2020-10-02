@@ -1,8 +1,10 @@
 .app {
-    padding-top: 100px;
+    padding-top: 90px;
+    height: 100%;
 }
 
 .app__page {
     display: flex;
     position: relative;
+    height: 100%;
 }

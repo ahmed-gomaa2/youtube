@@ -7,7 +7,7 @@ import * as actions from '../actions'
 
 const RecommendedVideos = (props) => {
     return (
-        <div className={`recommendedVideos ${props.open && 'recommendedVideos__positioned'}`}>
+        <div className={`recommendedVideos `}>
             <h2>Recommended</h2>
             <div className="recommendedVideos__videos">
                 {props.videos?.data?.items?.map(item => (

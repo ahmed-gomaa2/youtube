@@ -14,9 +14,6 @@
     margin-bottom: 20px;
 }
 
-.recommendedVideos__positioned {
-    left: 250px;
-}
 
 .recommendedVideos__videos {
     display: flex;

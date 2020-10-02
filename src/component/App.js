@@ -26,8 +26,8 @@ const App = (props) => {
                 <Route exact component={() => <Header openMenu={openMenu} open={open} />}/>
                 <div className="app__page">
                     <Route exact component={() => <Sidebar open={open} />} />
-                    <Route exact path={'/'} component={() => <RecommendedVideos open={open} />} />
-                    <Route exact path={'/videos/:videoId'} component={() => <VideoPlayer open={open} />} />
+                    <Route exact path={'/'} component={() => <RecommendedVideos />} />
+                    <Route exact path={'/videos/:videoId'} component={() => <VideoPlayer />} />
                 </div>
             </BrowserRouter>
         </div>

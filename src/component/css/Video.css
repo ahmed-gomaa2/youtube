@@ -19,3 +19,26 @@
 .video__text {
     margin-left: 15px;
 }
+
+@media only screen and (max-width: 590px) {
+    .video a{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .video{
+        width: 100%;
+    }
+
+    .video a {
+        display: flex;
+        flex-direction: column !important;
+    }
+}

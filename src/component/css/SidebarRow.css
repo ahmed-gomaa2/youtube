@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .4s;
 }
 
 .sidebarRow__icon {
     color: #606060;
     font-size: large !important;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .4s;
 }
 
 .sidebarRow__title {
@@ -16,7 +16,7 @@
     margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .4s;
 }
 
 .sidebarRow:hover{
